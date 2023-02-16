@@ -1,6 +1,6 @@
 {
-    "name": "fooderlich",
-    "short_name": "fooderlich",
+    "name": "fooderlich_upgrade",
+    "short_name": "fooderlich_upgrade",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
