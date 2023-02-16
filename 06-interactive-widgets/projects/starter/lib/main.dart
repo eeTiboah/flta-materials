@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fooderlich_upgrade/models/grocery_manager.dart';
 
 import 'fooderlich_theme.dart';
 import 'home.dart';
