@@ -1,3 +1,6 @@
+import 'package:provider/provider.dart';
+import '../models/models.dart';
+
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -57,6 +60,8 @@ class LoginScreen extends StatelessWidget {
         ),
         onPressed: () async {
           // TODO: Initiate Login
+          Provider.of<AppStateManager>(context, listen: false)
+              .login('mockusername', 'mockpassword');
         },
       ),
     );

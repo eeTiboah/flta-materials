@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'explore_screen.dart';
 import 'grocery_screen.dart';
 import 'recipes_screen.dart';
+import 'package:provider/provider.dart';
+import '../models/models.dart';
+import 'package:go_router/go_router.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -41,6 +44,8 @@ class HomeState extends State<Home> {
         currentIndex: widget.currentTab,
         onTap: (index) {
           // TODO: Update user's selected tab
+          Provider.of<AppStateManager>(context, listen: false).goToTab(index);
+          context.goNamed('home', params: {'tab': '$index'});
         },
         items: const [
           BottomNavigationBarItem(
